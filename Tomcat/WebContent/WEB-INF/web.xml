@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+
+	<servlet>
+		<servlet-name>Test</servlet-name>
+		<servlet-class>com.ntr.servlets.Test</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Test</servlet-name>
+		<url-pattern>/toto</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Connection</servlet-name>
+		<servlet-class>com.ntr.servlets.Connection</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Connection</servlet-name>
+		<url-pattern>/connection</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>MonCompte</servlet-name>
+		<servlet-class>com.ntr.servlets.MonCompte</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MonCompte</servlet-name>
+		<url-pattern>/compte</url-pattern>
+	</servlet-mapping>
+</web-app>

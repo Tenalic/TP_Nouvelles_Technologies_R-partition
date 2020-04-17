@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Mon compte</title>
+</head>
+<body>
+	<div>Mon compte</div>
+	<div>
+		<form action="/getPersonne" method="get">
+			<div>
+				<label> <input type="text" placeholder="idPersonne"
+					name="idPersonne"></label>
+			</div>
+			<button type="submit">getPersonne</button>
+		</form>
+	</div>
+	<div>
+		<form action="/credit" method="post">
+			<div>
+				<label> <input type="text" placeholder="idPersonne"
+					name="idPersonne"></label>
+			</div>
+			<div>
+				<label> <input type="text" placeholder="somme" name="somme"></label>
+			</div>
+			<button type="submit">Crediter</button>
+		</form>
+	</div>
+
+	<div>
+		<form action="/debit" method="post">
+			<div>
+				<label> <input type="text" placeholder="idPersonne"
+					name="idPersonne"></label>
+			</div>
+			<div>
+				<label> <input type="text" placeholder="somme" name="somme"></label>
+			</div>
+			<button type="submit">Debiter</button>
+		</form>
+	</div>
+
+	<div>
+		<form action="/transaction" method="post">
+			<div>
+				<label> <input type="text" placeholder="idPersonneDebiter"
+					name="idPersonneDebiter"></label>
+			</div>
+			<div>
+				<label> <input type="text" placeholder="idPersonneCrediter"
+					name="idPersonneCrediter"></label>
+			</div>
+			<div>
+				<label> <input type="text" placeholder="somme" name="somme"></label>
+			</div>
+			<button type="submit">Transaction</button>
+		</form>
+	</div>
+</body>
+</html>
